@@ -1,0 +1,116 @@
+@use 'variables';
+@use 'mixin';
+
+.register {
+  @include mixin.flex(row, center, center);
+  height: 100vh;
+
+  &__welcome {
+    @include mixin.flex(column, space-between, flex-end);
+    min-width: 350px;
+    min-height: 480px;
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: variables.$oxford-blue;
+
+    h2 {
+      font-weight: 100;
+      font-size: 1.2rem;
+      margin: 1rem 1rem 0 0;
+      color: variables.$white;
+    }
+
+    &-img {
+      @include mixin.flex(row, center, center);
+      width: 100%;
+      gap: 0.5rem;
+
+      h3 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: variables.$white;
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin: 1rem 1rem 0 0;
+      color: variables.$white;
+
+      a {
+        margin-left: 0.5rem;
+        color: variables.$platinum;
+      }
+    }
+  }
+
+  &__form {
+    @include mixin.flex(column, center, stretch);
+    padding: 1rem;
+    min-width: 350px;
+    min-height: 480px;
+    border-radius: 1rem 0 0 1rem;
+    color: variables.$black;
+    background-color: variables.$platinum;
+
+    h2 {
+      font-weight: 100;
+      font-size: 1.2rem;
+      margin: 1rem 0 0 1rem;
+    }
+
+    .formRegister {
+      margin: 1rem 0 0 1rem;
+
+      .form-group {
+        @include mixin.flex(column, flex-start, flex-start);
+        margin: 0.5rem 0 1rem 0;
+
+        label {
+          font-size: 0.6rem;
+          color: variables.$black;
+        }
+
+        input {
+          outline: none;
+          transition: all 0.5s linear;
+          width: 100%;
+          font-size: 0.8rem;
+          margin-bottom: 0.8rem;
+          padding: 0.5rem 1rem;
+          border-radius: 0.5rem;
+          border: 1px solid #aaa;
+          color: variables.$black;
+          background-color: transparent;
+
+          &:focus {
+            border-color: variables.$black;
+          }
+
+          &::placeholder {
+            color: variables.$black;
+          }
+        }
+
+        .btn {
+          cursor: pointer;
+          border: none;
+          transition: all 0.5s linear;
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+          font-size: 1rem;
+          padding: 1rem 1.5rem;
+          border-radius: 0.5rem;
+          color: variables.$white;
+          background-color: variables.$oxford-blue;
+
+          &:hover {
+            color: variables.$oxford-blue;
+            background-color: variables.$white;
+          }
+        }
+      }
+    }
+  }
+}

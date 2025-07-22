@@ -1,0 +1,15 @@
+@use 'variables';
+@use 'login';
+@use 'register';
+@use 'toDo';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive, sans-serif;
+  background-color: #000;
+}

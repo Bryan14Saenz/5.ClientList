@@ -1,0 +1,3 @@
+ignoredBuiltDependencies:
+  - eslint-config-prettier
+  - eslint-plugin-prettier
