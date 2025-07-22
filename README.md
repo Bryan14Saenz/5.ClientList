@@ -1,6 +1,6 @@
 # ✅ ToDo App | B14S
 
-**ToDo App | B14S** es una aplicación de tareas personales desarrollada con JavaScript, jQuery, Sass y Webpack.  
+**ToDo App | B14S** es una aplicación de tareas personales desarrollada con JavaScript, jQuery, Sass y EsBuild.  
 El objetivo del proyecto es practicar organización de tareas, integración de login, separación por módulos y compilación con herramientas modernas.
 
 ---
@@ -9,12 +9,11 @@ El objetivo del proyecto es practicar organización de tareas, integración de l
 
 La app permite a los usuarios:
 - Iniciar sesión con validación de formulario
-- Crear, editar, eliminar y marcar tareas
-- Visualizar tareas activas y completadas
+- Agregar una lista de clientes con sus datos
 - Guardar información en localStorage
 - Disfrutar de una experiencia visual limpia y moderna
 
-Este proyecto también incluye uso de **Sass** para modularidad de estilos y **Webpack** para el bundling del proyecto.
+Este proyecto también incluye uso de **Sass** para modularidad de estilos y **EsBuild** para el bundling del proyecto.
 
 ---
 
@@ -24,7 +23,7 @@ Este proyecto también incluye uso de **Sass** para modularidad de estilos y **W
 - Sass (SCSS)  
 - jQuery  
 - JavaScript ES6  
-- Webpack 5  
+- EsBuild  
 - Bootstrap Icons  
 - LocalStorage  
 - Responsive Design  
@@ -34,10 +33,9 @@ Este proyecto también incluye uso de **Sass** para modularidad de estilos y **W
 ## 🧭 Estructura del sitio
 
 - **Pantalla de login** con validaciones  
-- **Dashboard principal** donde se listan las tareas  
-- **Filtros** para tareas completadas/activas  
-- **Notificaciones de acción**  
-- **Diseño responsivo** adaptado a móviles y escritorio
+- **Dashboard principal** con opciones para agregar clientes
+- **Dashboard Secundario** para visualizar los clientes agregados
+- **Filtros** para mostrar por nombre a los clientes  
 
 ---
 
@@ -89,6 +87,5 @@ Este proyecto también incluye uso de **Sass** para modularidad de estilos y **W
 
 ## 🌍 Demo en línea
 
-🟢 Próximamente disponible en Netlify...
+🟢 Disponible en [clientList.netlify.app](https://clientList.netlify.app)
 
-¿Querés agregarle soporte de login real o mantenerlo simple con validación local? 🔐
